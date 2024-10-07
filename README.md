@@ -22,7 +22,11 @@ Set your correct serial port in `HP8596E_Print_Python/HP8596E_Print_Python.py` a
 
 **Python program supports Epson MX-80 Printer only.**
 
-Go to `Config`, `Set B&W Printer`, select `EP MX80 LRG`.
+- Go to `Config`
+  - Select `COPY DEV PRNT`
+  - Go to `Print Config`
+    - Go to `Prn Port Config`, select `PRN PORT PAR`
+    - Go to `Set B&W Printer`, select `EP MX80 LRG`
 
 ## Example Screenshot
 
