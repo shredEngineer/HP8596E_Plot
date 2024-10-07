@@ -1,3 +1,4 @@
 pyserial
 numpy
 matplotlib
+Pillow

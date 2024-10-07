@@ -3,6 +3,8 @@ import sys
 import time
 import serial
 import datetime
+import numpy as np
+from PIL import Image
 import matplotlib.pyplot as plt
 
 from printers.EpsonMX80 import parse_printer_data
@@ -64,6 +66,11 @@ while True:
                 f.write(bytearray(data_array))
             print(f"\n{len(data_array)} bytes written to {filename_bin}")
 
+            bitmap_array_uint8 = (bitmap_array * 255).astype(np.uint8)
+            image = Image.fromarray(bitmap_array_uint8)
+            image.save(filename_png)
+            print(f"PNG written to {filename_png}")
+
             aspect_ratio = width / height
             fig_width = 5
             fig_height = fig_width / aspect_ratio
@@ -71,7 +78,6 @@ while True:
             plt.figure(figsize=(fig_width, fig_height), constrained_layout=True)
             plt.imshow(bitmap_array, cmap="gray", interpolation="nearest")
             plt.axis("off")
-            plt.savefig(filename_png, format="png", bbox_inches="tight", pad_inches=0)
             plt.show()
         except Exception as e:
             print(f"\nFailed to parse printer data: {e}")

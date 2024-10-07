@@ -31,7 +31,7 @@ Press `COPY` on your HP8596E to initiate the data transfer. This takes about 6 s
 This is what a screenshot looks like:
 
 
-![Example Print](HP8596E_Plot_Python/data/2024-10-07%2013-03-48.png)
+![Example Print](HP8596E_Plot_Python/data/2024-10-07%2015-51-28.png)
 
 ## License
 
