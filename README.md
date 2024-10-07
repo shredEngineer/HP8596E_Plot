@@ -2,7 +2,7 @@
 
 Read screenshot from HP8596E (or similar) spectrum analyzer via Arduino Uno R3 configured as parallel port (Centronics/IEEE1284) printer emulator, with Python program receiving, decoding and saving image as PNG.
 
-<small>(I should have named this repo `HP8596E_Print` since it's actually about *printing* instead of *plotting*, which is an alternative mode.)</small>
+(I should have named this repo `HP8596E_Print` since it's actually about *printing* instead of *plotting*, which is an alternative mode.)
 
 ## Setup
 
@@ -26,7 +26,7 @@ Go to `Config`, `Set B&W Printer`, select `EP MX80 LRG`.
 
 ## Example Screenshot
 
-Press `COPY` on your HP8596E to initiate the data transfer. This takes about 6 seconds. On success, the image is save to disk and displayed. (Press `q` to close the related matplotlib window.)
+Press `COPY` on your HP8596E to initiate the data transfer. This takes about 6 seconds. On success, the image is saved to disk and displayed. (Press `q` to close the related matplotlib window.)
 
 This is what a screenshot looks like:
 
@@ -35,4 +35,4 @@ This is what a screenshot looks like:
 
 ## License
 
-Do what the fuck you want with this.
+Do what the fuck you want with this. (WTFPL)
