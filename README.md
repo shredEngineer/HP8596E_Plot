@@ -39,4 +39,4 @@ This is what a screenshot looks like:
 
 ## License
 
-Do what the fuck you want with this. (WTFPL)
+Do what the f*** you want with this. (WTFPL)
